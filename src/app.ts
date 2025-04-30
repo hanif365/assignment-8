@@ -1,5 +1,8 @@
 import express, { Application } from "express";
 import cors from "cors";
+import routes from "./app/routes";
+import globalErrorHandler from "./app/middlewares/globalErrorHandler";
+import { StatusCodes } from 'http-status-codes';
 
 const app: Application = express();
 
@@ -10,12 +13,18 @@ app.use(cors());
 
 // Welcome route
 app.get("/", (req, res) => {
-  res.status(200).json({
+  res.status(StatusCodes.OK).json({
     message: "Welcome to our Bike Servicing Management API",
     version: "1.0.0",
     API_documentation: "",
     success: true,
   });
 });
+
+// application routes
+app.use("/api", routes);
+
+// global error handler
+app.use(globalErrorHandler);
 
 export default app;
