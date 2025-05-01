@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.status(StatusCodes.OK).json({
     message: "Welcome to our Bike Servicing Management API",
     version: "1.0.0",
-    API_documentation: "",
+    API_documentation: "https://documenter.getpostman.com/view/31322920/2sB2j4eAim",
     success: true,
   });
 });
