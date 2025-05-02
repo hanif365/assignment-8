@@ -7,6 +7,10 @@ This is a backend API system where we can managing a bike servicing center's ope
 
 [🚀 API Documentation](https://documenter.getpostman.com/view/31322920/2sB2j4eAim)
 
+[🚀 Live Backend Link](https://bike-service-one.vercel.app)
+
+Railway Database public url: postgresql://postgres:LRnNDPbQpSyMpcixIeCHFkjDXaCxRbnb@metro.proxy.rlwy.net:43570/railway
+
 ## 🛠️ Technologies
 
 - Node.js
